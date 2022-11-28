@@ -1,0 +1,16 @@
+.focus{
+    border:white 3px solid;
+}
+
+.pic{
+    left: 3px;
+    top: 3px;
+}
+
+.item .select{
+    display: none;
+}
+
+.item_select .select{
+    display: unset;
+}

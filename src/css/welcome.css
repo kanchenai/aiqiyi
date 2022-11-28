@@ -1,0 +1,31 @@
+.big_pic img{
+    width: 1280px;
+    height: 720px;
+    border-radius: unset;
+}
+
+.count_down{
+    width: 70px;
+    height: 50px;
+    left: 1180px;
+    top: 30px;
+    border-radius: 23px;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(125,125,125,0.6);
+}
+
+.tips{
+    width: 270px;
+    height: 50px;
+    left: 980px;
+    top: 630px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(125,125,125,0.6);
+}

@@ -1,0 +1,135 @@
+.bg img,
+.bg .color {
+    width: 1280px;
+    height: 720px;
+}
+
+.logo {
+    top: 42px;
+    left: 42px;
+    z-index: 1;
+}
+
+.logo img {
+    height: 18px;
+    border-radius: 0px;
+}
+
+.navigation {
+    width: 762px;
+    height: 36px;
+    left: 216px;
+    top: 32px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navigation .item,
+.navigation .focus {
+    width: 127px;
+    height: 36px;
+}
+
+.navigation .focus {
+    border: unset;
+    border-radius: 7px;
+}
+
+.navigation .txt {
+    width: 127px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navigation .item_focus .txt {
+    font-size: 28px;
+}
+
+.navigation .focus {
+    background-color: #61dd6c;
+}
+
+.navigation .select {
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    left: 53px;
+    top: 32px;
+    background-color: #61dd6c;
+}
+
+.search {
+    top: 35px;
+    left: 1000px;
+    z-index: 1;
+}
+
+.search .item,
+.search .bg {
+    width: 146px;
+    height: 31px;
+}
+
+.search .bg {
+    border-radius: 16px;
+    background: rgba(128, 128, 128, 0.6);
+}
+
+.search .focus {
+    width: 146px;
+    height: 31px;
+    background-color: #61dd6c;
+    border-radius: 16px;
+    border: unset;
+}
+
+.search .icon {
+    height: 16px;
+    top: 8px;
+    left: 113px;
+}
+
+.search .txt {
+    width: 95px;
+    height: 31px;
+    left: 18px;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+.history {
+    left: 1185px;
+    top: 35px;
+    z-index: 1;
+}
+
+.history .item {
+    width: 31px;
+    height: 31px;
+}
+
+.history .focus,
+.history .icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.history .focus {
+    border-radius: 15px;
+    border-color: #61dd6c;
+}
+
+.history .icon {
+    left: 3px;
+    top: 3px;
+}
+
+.h_scroll {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+}
+
