@@ -1,9 +1,129 @@
 <template>
-    <recycle class="carousel" id="carousel">
-        <div class="big_picture">
-            <img id="big_picture">
+    <recycle class="carousel_group" view-orientation="h" view-loop="0" id="carousel_group">
+        <div class="r_1280x513" style="left: 0px;top:0px;">
+            <div class="item">
+                <div class="focus"><img></div>
+                <div class="pic"><img id="pic"></div>
+            </div>
+        </div>
+    </recycle>
+    <div class="point_list_bg"></div>
+    <recycle class="point_list"
+             view-orientation="h" view-loop="0"
+             view-left="none" view-right="none"
+             view-select="1"
+             id="point_list">
+        <item class="item"></item>
+    </recycle>
+    <div class="title" style="top: 540px;">
+        <div class="txt">猜你喜欢</div>
+    </div>
+    <recycle class="like_group" view-orientation="h" view-loop="0" id="like_group">
+        <div class="r_254x194" >
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/like_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 150px;" id="info1"></div>
+                <div class="info" style="top: 167px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 837px;">
+        <div class="txt">正在热播</div>
+    </div>
+    <recycle class="hot_group" view-orientation="h" view-loop="0" id="hot_group">
+        <div class="r_254x194" >
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/like_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 150px;" id="info1"></div>
+                <div class="info" style="top: 167px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 1130px;">
+        <div class="txt">坚持与努力成就了你</div>
+    </div>
+    <recycle class="topic_0" view-orientation="h" view-loop="0" id="topic_0">
+        <div class="r_204x306">
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/topic_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 261px;" id="info1"></div>
+                <div class="info" style="top: 278px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 1540px;">
+        <div class="txt">新片速递</div>
+    </div>
+    <recycle class="new_group" view-orientation="h" view-loop="0" id="new_group">
+        <div class="r_204x356">
+            <div class="line" id="line"></div>
+            <span class="time" id="time"></span>
+            <item class="item" style="top: 40px;">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/topic_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 261px;" id="info1"></div>
+                <div class="info" style="top: 278px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 2027px;">
+        <div class="txt">跨越千年的爱恋</div>
+    </div>
+    <recycle class="topic_1" view-orientation="h" view-loop="0" id="topic_1">
+        <div class="r_204x306" >
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/topic_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 261px;" id="info1"></div>
+                <div class="info" style="top: 278px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 2435px;">
+        <div class="txt">部部经典的枪战片合集</div>
+    </div>
+    <recycle class="topic_2" view-orientation="h" view-loop="0" id="topic_2">
+        <div class="r_204x306" >
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/topic_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 261px;" id="info1"></div>
+                <div class="info" style="top: 278px;" id="info2"></div>
+            </item>
+        </div>
+    </recycle>
+    <div class="title" style="top: 2843px;">
+        <div class="txt">爱奇艺风云榜</div>
+    </div>
+    <recycle class="topic_3" view-orientation="h" view-loop="0" id="topic_3">
+        <div class="r_204x306" >
+            <item class="item">
+                <div class="focus"></div>
+                <div class="pic"><img id="pic"></div>
+                <div class="shadow"><img src="../../../images/home/recommend_fragment/topic_shadow.png" view-lazy="0"></div>
+                <text class="name" id="name"></text>
+                <div class="info" style="top: 261px;" id="info1"></div>
+                <div class="info" style="top: 278px;" id="info2"></div>
+            </item>
         </div>
     </recycle>
 
-
+    <div class="back_top">
+        <div class="item" view-type="item" view-id="back_top">按确认键，回到顶部</div>
+    </div>
 </template>

@@ -31,7 +31,7 @@ export default class MyApplication extends Application {
                 firstPage = new HomePage();
                 break;
             default:
-                firstPage = new WelcomePage();
+                firstPage = new HomePage();
                 break;
         }
         return {firstPage, param};

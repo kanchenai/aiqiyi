@@ -4,6 +4,13 @@
     height: 720px;
 }
 
+.top{
+    width: 1280px;
+    height: 68px;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .logo {
     top: 42px;
     left: 42px;
@@ -50,6 +57,10 @@
 
 .navigation .focus {
     background-color: #61dd6c;
+}
+
+.navigation .item_select .txt {
+    color: #61dd6c;
 }
 
 .navigation .select {

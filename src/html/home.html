@@ -2,28 +2,31 @@
     <div class="bg">
         <div class="color" style="background: #141516;" id="bg"></div>
     </div>
-    <div class="logo"><img src="../images/home/logo.png" alt=""></div>
-    <recycle class="navigation" id="navigation" view-loop="false" view-focus view-select="1">
-        <item class="item">
-            <div class="focus"></div>
-            <div class="select"></div>
-            <text class="txt" id="txt">推荐</text>
-        </item>
-    </recycle>
-    <div class="search">
-        <item class="item" view-id="search">
-            <div class="bg"></div>
-            <div class="focus"></div>
-            <div class="icon"><img src="../images/home/icon_search.png"></div>
-            <div class="txt" view-type="text" id="key">七龙珠</div>
-        </item>
-    </div>
+    <group class="top" view-id="top_group">
+        <div class="logo"><img src="../images/home/logo.png" alt=""></div>
+        <recycle class="navigation" id="navigation" view-loop="false" view-focus view-select="1">
+            <item class="item">
+                <div class="focus"></div>
+                <div class="select"></div>
+                <text class="txt" id="txt">推荐</text>
+            </item>
+        </recycle>
+        <div class="search">
+            <item class="item" id="search">
+                <div class="bg"></div>
+                <div class="focus"></div>
+                <div class="icon"><img src="../images/home/icon_search.png"></div>
+                <div class="txt" view-type="text" id="key">七龙珠</div>
+            </item>
+        </div>
 
-    <div class="history">
-        <item class="item" id="history">
-            <div class="focus"></div>
-            <div class="icon"><img src="../images/home/icon_history.png"></div>
-        </item>
-    </div>
-    <view-frame class="h_scroll" id="frame_view"></view-frame>
+        <div class="history">
+            <item class="item" id="history">
+                <div class="focus"></div>
+                <div class="icon"><img src="../images/home/icon_history.png"></div>
+            </item>
+        </div>
+        <div class="top" style="top: 68px;"></div>
+    </group>
+    <view-frame class="h_scroll" id="frame_view" view-up="navigation"></view-frame>
 </template>
