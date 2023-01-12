@@ -4,6 +4,7 @@ import {Adapter} from "@core/frame/view/group/RecycleView";
 import {carouselData, hotData, likeData, newData, topicData_0} from "@src/mock-data/home/recommend_fragement_data";
 import VMargin from "@core/frame/util/VMargin";
 import View from "@core/frame/view/base/View";
+import OrderPage from "@page/OrderPage";
 
 export default class RecommendFragment extends Fragment {
     onCreate() {
@@ -63,6 +64,10 @@ export default class RecommendFragment extends Fragment {
         switch (view.id){
             case "back_top":
                 this.point_list.requestFocus();
+                break;
+            default:
+                var orderPage = new OrderPage();
+                this.startPage(orderPage,null);
                 break;
         }
     }

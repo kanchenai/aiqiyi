@@ -1,0 +1,149 @@
+.item .pic{
+    left: 3px;
+    top: 3px;
+}
+
+.item .focus{
+    border: white 3px solid;
+}
+
+.main_content,
+.main_content .bg img{
+    width: 1280px;
+    height: 447px;
+}
+
+.main_content .item{
+    left: 683px;
+    top: 86px;
+    width: 558px;
+    height: 315px;
+}
+
+.main_content .focus{
+    width: 552px;
+    height: 309px;
+}
+
+.main_content .player{
+    width: 552px;
+    height: 309px;
+    left: 686px;
+    top: 89px;
+}
+
+.main_content .poster img{
+    width: 628px;
+    height: 376px;
+}
+
+.r_254x194,
+.r_254x194 .item{
+    width: 260px;
+    height: 200px;
+}
+
+.r_254x194 .focus{
+    width: 254px;
+    height: 194px;
+}
+.r_254x194 .pic,
+.r_254x194 .pic img{
+    width: 254px;
+    height: 143px;
+}
+
+.r_254x194 .shadow{
+    left: 3px;
+    top: 67px;
+}
+
+.r_254x194 .shadow img{
+    width: 254px;
+    height: 130px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.r_254x194 .name{
+    width: 220px;
+    height: 18px;
+    left: 20px;
+    top: 122px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+}
+
+.r_254x194 .info{
+    width: 220px;
+    height: 12px;
+    left: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: gray;
+    line-height: 12px;
+    overflow: hidden;
+}
+
+
+.r_584x440,
+.r_584x440 .item{
+    width: 591px;
+    height: 446px;
+}
+
+.r_584x440 .focus{
+    width: 584px;
+    height: 440px;
+}
+
+.r_584x440 .pic,
+.r_584x440 .pic img{
+    width: 584px;
+}
+
+.r_584x440 .shadow{
+    left: 3px;
+    top: 283px;
+}
+
+.r_584x440 .shadow img{
+    width: 584px;
+    height: 160px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.r_584x440 .name{
+    width: 220px;
+    height: 18px;
+    left: 20px;
+    top: 353px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+}
+
+.r_584x440 .info{
+    width: 220px;
+    height: 12px;
+    left: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: gray;
+    line-height: 12px;
+    overflow: hidden;
+}
+
+.screen_194{
+    width: 1280px;
+    height: 200px;
+}
+
+.screen_440{
+    width: 1280px;
+    height: 446px;
+}

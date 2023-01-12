@@ -180,7 +180,7 @@ export var topicData_0 = [
         pic: topic_0_04
     },
     {
-        name: "沉默的真想",
+        name: "沉默的真相",
         info1: "****",
         info2: "********",
         pic: topic_0_05

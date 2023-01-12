@@ -1,0 +1,90 @@
+<template>
+    <div class="bg">
+        <div class="color" style="background: #141516;" id="order_bg"></div>
+    </div>
+    <!--    顶部  -->
+    <group class="order_top" id="order_top">
+
+        <div class="top_bg">
+            <img src="../images/order/top-bg.png" alt="">
+        </div>
+        <div class="logo"><img src="../images/home/logo.png" alt=""></div>
+        <!--    VIP精选   -->
+        <div class="top_recommend">
+            <item class="item" first-focus id="vip_recommend">
+                <div class="focus"></div>
+                <div class="select"></div>
+                <div class="pic"><img src="../images/order/vip-recommend.png" alt=""/></div>
+            </item>
+        </div>
+        <!--    订购导航    -->
+        <recycle class="navigation" id="order_navigation">
+            <item class="item">
+                <div class="focus"></div>
+                <div class="select"></div>
+                <text class="txt" id="txt"></text>
+            </item>
+        </recycle>
+
+        <!--    搜索   -->
+        <div class="top_search">
+            <item class="item" view-id="top_search">
+                <div class="focus"></div>
+                <div class="select"></div>
+                <div class="pic"><img src="../images/order/top-search.png" alt=""/></div>
+            </item>
+        </div>
+
+        <!--    历史记录   -->
+        <div class="top_history">
+            <item class="item" view-id="top_history">
+                <div class="focus"></div>
+                <div class="select"></div>
+                <div class="pic"><img src="../images/order/top-history.png" alt=""/></div>
+            </item>
+        </div>
+    </group>
+
+    <recycle class="user_btn" id="user_btn">
+        <item class="item">
+            <div class="focus"></div>
+            <text class="txt" id="userBtnTxt"></text>
+        </item>
+    </recycle>
+
+
+    <div class="activity_title">热门活动</div>
+    <recycle class="activity" id="activity">
+        <item class="item">
+            <div class="focus"></div>
+            <img id="active_img">
+            <text class="name_txt" id="name"></text>
+            <text class="detail_txt" id="detail"></text>
+        </item>
+    </recycle>
+
+    <div class="integral_title">积分换会员</div>
+    <recycle class="integral" id="integral">
+        <item class="item">
+            <div class="focus"></div>
+            <img class="pic" id="integral_pic">
+            <text class="name_txt" id="integral_name"></text>
+            <div class="btn">去查看</div>
+        </item>
+    </recycle>
+
+    <div class="jointly_title">联名会员</div>
+    <recycle class="jointly" id="jointly">
+        <item class="item">
+            <div class="focus"></div>
+            <img class="pic" id="jointly_pic">
+            <text class="name_txt" id="jointly_name"></text>
+            <div class="price_box">
+                <span class="small">￥</span>
+                <span class="price" id="price"></span>
+                <span class="unit small" id="unit"></span>
+            </div>
+            <div class="btn">购买</div>
+        </item>
+    </recycle>
+</template>

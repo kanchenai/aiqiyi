@@ -1,5 +1,5 @@
 import Application from "../core/frame/app/Application";
-import HomePage from "./page/HomePage";
+import HomePage from "@page/HomePage";
 import AliWebPlayer from "@src/util/AliWebPlayer";
 import WelcomePage from "@page/WelcomePage";
 
