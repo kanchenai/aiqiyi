@@ -8,9 +8,7 @@
     "server": "webpack-dev-server --hot",
     "build": "webpack --config webpack.config.js"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.5",
     "@babel/plugin-transform-runtime": "^7.16.5",

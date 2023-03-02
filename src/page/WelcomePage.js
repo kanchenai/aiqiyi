@@ -35,6 +35,8 @@ export default class WelcomePage extends Page{
 
                 var homePage = new HomePage();
                 that.startPage(homePage,null);
+
+                that.finish();
             }else{
                 count_down.innerText = count;
             }

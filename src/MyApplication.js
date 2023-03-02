@@ -2,6 +2,7 @@ import Application from "../core/frame/app/Application";
 import HomePage from "@page/HomePage";
 import AliWebPlayer from "@src/util/AliWebPlayer";
 import WelcomePage from "@page/WelcomePage";
+import OrderPage from "./page/OrderPage";
 
 require('./global_style.css')
 
@@ -11,8 +12,14 @@ export default class MyApplication extends Application {
         this.pageManager.pageTypeCallback = function (pageName) {
             var page = null;
             switch (pageName) {
+                case "WelcomePage":
+                    page = new WelcomePage();
+                    break;
                 case "HomePage":
                     page = new HomePage();
+                    break;
+                case "OrderPage":
+                    page = new OrderPage();
                     break;
             }
             return page;
@@ -31,7 +38,7 @@ export default class MyApplication extends Application {
                 firstPage = new HomePage();
                 break;
             default:
-                firstPage = new HomePage();
+                firstPage = new WelcomePage();
                 break;
         }
         return {firstPage, param};
