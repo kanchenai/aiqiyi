@@ -1,0 +1,108 @@
+.bg_transparent{
+    width: 1280px;
+    height: 720px;
+    background: white;
+    opacity: 0.9;
+}
+
+.bg_black{
+    width: 840px;
+    height: 640px;
+    left: 220px;
+    top: 80px;
+    background: #21252D;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.title{
+    width: 840px;
+    height: 30px;
+    left: 220px;
+    top: 120px;
+    line-height: 30px;
+    font-size: 26px;
+    color:white;
+    text-align: center;
+}
+
+.content_list{
+    width: 810px;
+    height: 540px;
+    left: 240px;
+    top: 180px;
+    overflow: hidden;
+}
+
+.r_254x194,
+.r_254x194 .item{
+    width: 260px;
+    height: 200px;
+}
+
+.r_254x194 .focus{
+    width: 254px;
+    height: 194px;
+}
+.r_254x194 .item .focus{
+    border: white 3px solid;
+}
+
+.r_254x194 .pic,
+.r_254x194 .pic img{
+    width: 254px;
+    height: 143px;
+}
+
+.r_254x194 .pic{
+    left: 3px;
+    top: 3px;
+}
+
+.r_254x194 .shadow{
+    left: 3px;
+    top: 67px;
+}
+
+.r_254x194 .shadow img{
+    width: 254px;
+    height: 130px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.r_254x194 .text{
+    width: 220px;
+    height: 18px;
+    left: 15px;
+    top: 150px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.r_254x194 .info1{
+    width: 220px;
+    height: 16px;
+    left: 175px;
+    top: 125px;
+    white-space: nowrap;
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.r_254x194 .info2{
+    width: 220px;
+    height: 14px;
+    left: 15px;
+    top: 174px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: gray;
+    line-height: 14px;
+    overflow: hidden;
+}
