@@ -1,0 +1,184 @@
+.top_bg img{
+    width: 1280px;
+}
+
+.order_bg img{
+    width: 400px;
+    left: 834px;
+    top: 120px;
+}
+
+.user_btn,
+.activity,
+.integral,
+.jointly {
+    width: 1235px;
+    left: 45px;
+}
+
+.user_btn {
+    top: 327px;
+    height: 61px;
+}
+
+.user_btn .item {
+    top: 3px;
+    width: 279px;
+    height: 61px;
+}
+
+.user_btn .item .focus {
+    width: 275px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.user_btn .item,
+.activity .item,
+.integral .item,
+.jointly .item {
+    background-color: #21252D;
+    border-radius: 10px;
+    color: #AD8550;
+    font-size: 18px;
+}
+
+.user_btn .item .txt {
+    width: 279px;
+    height: 49px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 49px;
+    color: white;
+    top: 3px;
+    left: 3px;
+}
+
+.activity_title {
+    left: 45px;
+    top: 426px;
+}
+
+.activity {
+    top: 480px;
+    height: 131px;
+}
+
+.activity .item {
+    width: 279px;
+    height: 131px;
+}
+
+.activity .item .focus {
+    width: 275px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+.activity .item img {
+    position: absolute;
+    right: 0;
+    height: 125px;
+}
+
+.activity .item .name_txt {
+    width: 120px;
+    height: 20px;
+    left: 20px;
+    top: 37px;
+    color: white;
+    white-space: nowrap;
+}
+
+.activity .item .detail_txt {
+    width: 120px;
+    height: 20px;
+    left: 20px;
+    top: 72px;
+    white-space: nowrap;
+}
+
+.integral_title {
+    left: 45px;
+    top: 654px;
+}
+
+.integral {
+    top: 708px;
+    height: 360px;
+}
+
+.integral .item,
+.jointly .item {
+    width: 282px;
+    height: 282px;
+}
+
+.integral .item .pic {
+    width: 170px;
+    left: 55px;
+}
+
+.integral .item .focus,
+.jointly .item .focus {
+    width: 276px;
+    height: 276px;
+    border-radius: 10px;
+}
+
+.integral .item .name_txt,
+.jointly .item .name_txt {
+    top: 165px;
+    width: 279px;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.integral .item .btn,
+.jointly .item .btn {
+    left: 20px;
+    top: 208px;
+    width: 238px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #313331;
+    border-radius: 10px;
+}
+
+.jointly_title {
+    left: 45px;
+    top: 1034px;
+}
+
+.jointly {
+    top: 1088px;
+    height: 330px;
+}
+
+.jointly .item .pic {
+    width: 130px;
+    left: 75px;
+}
+
+.jointly .item .name_txt {
+    top: 132px;
+}
+
+.jointly .item .price_box {
+    top: 164px;
+    width: 279px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.jointly .item .price {
+    width: 100px;
+    height: 30px;
+    text-align: left;
+}
+
+.jointly .item .price_box div {
+    display: inline-block;
+}

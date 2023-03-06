@@ -1,0 +1,57 @@
+<template>
+    <div class="top_bg">
+        <img src="../../../images/order/recommend_fragment/top_bg.png" alt="">
+    </div>
+
+    <div class="order">
+        <div class="order_bg">
+            <img src="../../../images/order/recommend_fragment/order_bg.png" alt="">
+        </div>
+        <item class="item">
+            <div class="focus"></div>
+            <div class="pic"><img src="../../../images/order/recommend_fragment/order.png" alt=""></div>
+        </item>
+    </div>
+
+    <recycle class="user_btn" id="user_btn">
+        <item class="item">
+            <div class="focus"></div>
+            <text class="txt" id="userBtnTxt"></text>
+        </item>
+    </recycle>
+
+    <div class="activity_title">热门活动</div>
+    <recycle class="activity" id="activity">
+        <item class="item">
+            <div class="focus"></div>
+            <img id="active_img">
+            <text class="name_txt" id="name"></text>
+            <text class="detail_txt" id="detail"></text>
+        </item>
+    </recycle>
+
+    <div class="integral_title">积分换会员</div>
+    <recycle class="integral" id="integral">
+        <item class="item">
+            <div class="focus"></div>
+            <img class="pic" id="integral_pic">
+            <text class="name_txt" id="integral_name"></text>
+            <div class="btn">去查看</div>
+        </item>
+    </recycle>
+
+    <div class="jointly_title">联名会员</div>
+    <recycle class="jointly" id="jointly">
+        <item class="item">
+            <div class="focus"></div>
+            <img class="pic" id="jointly_pic">
+            <text class="name_txt" id="jointly_name"></text>
+            <div class="price_box">
+                <span class="small">￥</span>
+                <span class="price" id="price"></span>
+                <span class="unit small" id="unit"></span>
+            </div>
+            <div class="btn">购买</div>
+        </item>
+    </recycle>
+</template>
