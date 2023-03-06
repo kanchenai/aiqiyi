@@ -2,11 +2,44 @@
     width: 1280px;
 }
 
+.item .focus{
+    border: white 3px solid;
+}
+
+.order{
+    top: 120px;
+}
+
 .order_bg img{
     width: 400px;
     left: 834px;
-    top: 120px;
 }
+
+.order .item{
+    width: 1280px;
+    height: 44px;
+    top: 90px;
+}
+
+.order .focus{
+    width: 80px;
+    height: 38px;
+    left:1104px;
+    top: 3px;
+    border-radius: 20px;
+}
+
+.order .pic,
+.order .pic img{
+    width: 80px;
+    height: 38px;
+}
+
+.order .pic{
+    left:1107px;
+    top: 3px;
+}
+
 
 .user_btn,
 .activity,

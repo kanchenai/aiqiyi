@@ -6,6 +6,7 @@ import RecommendFragment from "../fragment/order/RecommendFragment";
 import WatchFragment from "../fragment/order/WatchFragment";
 import ValueFragment from "../fragment/order/ValueFragment";
 import VipFragment from "../fragment/order/VipFragment";
+import HistoryDialog from "../dialog/HistoryDialog";
 
 
 export default class OrderPage extends Page {
@@ -31,6 +32,8 @@ export default class OrderPage extends Page {
             new ValueFragment(this.viewManager),
             new VipFragment(this.viewManager)
         ])
+
+        this.historyDialog = new HistoryDialog(this.viewManager);
     }
 
     setView() {
@@ -41,6 +44,17 @@ export default class OrderPage extends Page {
 
     initUtil() {
         this.navigation.data = ["VIP精选","看影剧","领福利","领会员"];
+    }
+
+
+    onClickListener(view){
+        switch (view.id){
+            case "search":
+                break;
+            case "history":
+                this.historyDialog.show();
+                break;
+        }
     }
 }
 

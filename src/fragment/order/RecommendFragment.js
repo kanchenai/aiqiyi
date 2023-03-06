@@ -1,6 +1,7 @@
 import Fragment from "../../../core/frame/view/group/Fragment";
 import html from "../../html/fragment/order/recommend_fragment.html"
 import {Adapter, HORIZONTAL} from "../../../core/frame/view/group/RecycleView";
+import OrderDialog from "../../dialog/OrderDialog";
 
 export default class RecommendFragment extends Fragment {
     onCreate() {
@@ -11,11 +12,12 @@ export default class RecommendFragment extends Fragment {
     }
 
     initView() {
+        this.order = this.findViewById("order");
+
         this.userBtn = this.findViewById('user_btn');
         this.userBtn.orientation = HORIZONTAL;
         this.userBtn.margin.left = 25;
         this.userBtn.adapter = new UserBtnAdapter();
-        this.userBtn.onFocusChangeListener = onFocusChangeListener;
 
         this.activity = this.findViewById('activity');
         this.activity.orientation = HORIZONTAL;
@@ -31,10 +33,13 @@ export default class RecommendFragment extends Fragment {
         this.jointly.orientation = HORIZONTAL;
         this.jointly.margin.left = 25;
         this.jointly.adapter = new JointlyAdapter();
+
+        this.orderDialog = new OrderDialog(this.viewManager);
     }
 
     setView() {
-
+        this.order.onFocusChangeListener = onFocusChangeListener;
+        this.userBtn.onFocusChangeListener = onFocusChangeListener;
     }
 
     initUtils() {
@@ -60,6 +65,14 @@ export default class RecommendFragment extends Fragment {
             {name: 'VIP+星巴克', price: '248', unit: '年', img: require('../../images/order/recommend_fragment/jointly-pic1.png')},
             {name: 'VIP+京东Plus', price: '248', unit: '年', img: require('../../images/order/recommend_fragment/jointly-pic1.png')}
         ]
+    }
+
+    onClickListener(view){
+        switch (view.id){
+            case "order":
+                this.orderDialog.show();
+                break;
+        }
     }
 }
 

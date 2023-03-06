@@ -1,0 +1,27 @@
+.bg_transparent{
+    width: 1280px;
+    height: 720px;
+    background: white;
+    opacity: 0.9;
+}
+
+.bg_black{
+    width: 840px;
+    height: 640px;
+    left: 220px;
+    top: 80px;
+    background: #21252D;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.title{
+    width: 840px;
+    height: 30px;
+    left: 220px;
+    top: 120px;
+    line-height: 30px;
+    font-size: 26px;
+    color:white;
+    text-align: center;
+}
