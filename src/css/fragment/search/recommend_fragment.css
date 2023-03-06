@@ -1,0 +1,162 @@
+.title{
+    width: 150px;
+    height: 32px;
+    left: 42px;
+    line-height: 28px;
+    color: white;
+    font-size: 30px;
+}
+
+.history{
+    width: 510px;
+    height: 70px;
+    left: 42px;
+    top: 50px;
+}
+
+.history .item{
+    width: 100px;
+    height: 32px;
+}
+
+.history .focus{
+    width: 100px;
+    height: 32px;
+    border: unset;
+    background: #61dd6c;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+}
+
+.history .text{
+    width: 100px;
+    height: 32px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    white-space: nowrap;
+}
+
+.delete_history{
+    width: 120px;
+    height: 28px;
+    left: 550px;
+    top: 50px;
+}
+
+.delete_history .item{
+    width: 120px;
+    height: 32px;
+}
+
+.delete_history .text{
+    width: 120px;
+    height: 32px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    white-space: nowrap;
+}
+
+.delete_history .focus{
+    width: 120px;
+    height: 32px;
+    border: unset;
+    background: #61dd6c;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+}
+
+.line{
+    width: 1px;
+    height: 100px;
+    left: 680px;
+    background: #666666;
+    opacity: 0.8;
+}
+
+.recommend{
+    width: 510px;
+    height: 100px;
+    left: 722px;
+    top: 50px;
+}
+
+.recommend .item{
+    width: 100px;
+    height: 32px;
+}
+
+.recommend .focus{
+    width: 100px;
+    height: 32px;
+    border: unset;
+    background: #61dd6c;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+}
+
+.recommend .text{
+    width: 100px;
+    height: 32px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    white-space: nowrap;
+}
+
+.bottom{
+    width: 1200px;
+    height: 455px;
+    top: 140px;
+    left: 40px;
+    overflow: hidden;
+}
+
+.header{
+    width: 210px;
+    height: 50px;
+    background-color: #1c2e28;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.type_recommend{
+    width: 210px;
+    height: 405px;
+    top: 50px;
+    overflow: hidden;
+}
+
+.type_recommend .item{
+    width: 210px;
+    height: 45px;
+}
+
+.type_recommend .focus{
+    width: 210px;
+    height: 45px;
+    border: unset;
+    background: #61dd6c;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+
+.type_recommend .text{
+    width: 180px;
+    height: 45px;
+    left: 15px;
+    font-size: 22px;
+    line-height: 45px;
+    color: white;
+    white-space: nowrap;
+}

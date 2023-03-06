@@ -9,6 +9,7 @@ import DramaFragment from "@fragment/home/DramaFragment";
 import MovieFragment from "@fragment/home/MovieFragment";
 import VarietyFragment from "@fragment/home/VarietyFragment";
 import AnimationFragment from "@fragment/home/AnimationFragment";
+import SearchPage from "./SearchPage";
 
 export default class HomePage extends Page {
     constructor() {
@@ -29,7 +30,7 @@ export default class HomePage extends Page {
         this.navigation = this.findViewById("navigation");
         this.navigation.orientation = HORIZONTAL;
         this.navigation.adapter = new NavAdapter();
-        this.navigation.data = ["推荐","卿卿","电视剧","电影","综艺","动漫"];
+        this.navigation.data = ["推荐", "卿卿", "电视剧", "电影", "综艺", "动漫"];
 
         this.history = this.findViewById("history");
 
@@ -51,7 +52,7 @@ export default class HomePage extends Page {
         this.navigation.onFocusChangeListener = onNavigationFocusChangeListener;
     }
 
-    initUtil(){
+    initUtil() {
 
     }
 
@@ -64,15 +65,19 @@ export default class HomePage extends Page {
     }
 
     onClickListener(view) {
-        switch (view.id){
+        switch (view.id) {
             case "history":
                 this.historyDialog.show();
+                break;
+            case "search":
+                var searchPage = new SearchPage();
+                this.startPage(searchPage, null);
                 break;
         }
     }
 }
 
-class NavAdapter extends Adapter{
+class NavAdapter extends Adapter {
     bindHolder(holder, data) {
         var txt = holder.findViewById("txt");
 

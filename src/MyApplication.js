@@ -3,6 +3,7 @@ import HomePage from "@page/HomePage";
 import AliWebPlayer from "@src/util/AliWebPlayer";
 import WelcomePage from "@page/WelcomePage";
 import OrderPage from "./page/OrderPage";
+import SearchPage from "./page/SearchPage";
 
 require('./global_style.css')
 
@@ -21,6 +22,9 @@ export default class MyApplication extends Application {
                 case "OrderPage":
                     page = new OrderPage();
                     break;
+                case "SearchPage":
+                    page = new SearchPage();
+                    break;
             }
             return page;
         }
@@ -36,6 +40,12 @@ export default class MyApplication extends Application {
                 break;
             case "home":
                 firstPage = new HomePage();
+                break;
+            case "order":
+                firstPage = new OrderPage();
+                break;
+            case "search":
+                firstPage = new SearchPage();
                 break;
             default:
                 firstPage = new WelcomePage();
