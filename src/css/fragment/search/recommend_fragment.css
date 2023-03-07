@@ -130,19 +130,20 @@
 }
 
 .type_recommend{
-    width: 210px;
+    width: 208px;
     height: 405px;
     top: 50px;
     overflow: hidden;
+    border: 1px solid #1c2e28;
 }
 
 .type_recommend .item{
-    width: 210px;
+    width: 208px;
     height: 45px;
 }
 
 .type_recommend .focus{
-    width: 210px;
+    width: 208px;
     height: 45px;
     border: unset;
     background: #61dd6c;
@@ -154,7 +155,7 @@
 .type_recommend .text{
     width: 180px;
     height: 45px;
-    left: 15px;
+    left: 14px;
     font-size: 22px;
     line-height: 45px;
     color: white;

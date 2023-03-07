@@ -1,29 +1,18 @@
 <template>
-    <recycle class="history">
+    <div class="title">搜索结果</div>
+    <recycle class="result">
         <item class="item">
             <div class="focus"></div>
-            <text class="text" id="text"></text>
+            <div class="pic"><img id="pic"></div>
+            <div class="shadow"><img src="../../../images/home/recommend_fragment/like_shadow.png" view-lazy="0"></div>
+            <text class="name" id="name"></text>
+            <div class="info" style="top: 150px;" id="info1"></div>
+            <div class="info" style="top: 167px;" id="info2"></div>
         </item>
     </recycle>
-    <div class="delete_history">
-        <item class="item">
-            <div class="focus"></div>
-            <div class="pic"></div>
-        </item>
-    </div>
-    <recycle class="recommend"></recycle>
-    <group class="bottom">
-        <div class="header">热播</div>
-        <recycle class="hot"></recycle>
-        <div class="header">电视剧</div>
-        <recycle class="drama"></recycle>
-        <div class="header">电影</div>
-        <recycle class="movie"></recycle>
-        <div class="header">综艺</div>
-        <recycle class="variety"></recycle>
-        <div class="header">动漫</div>
-        <recycle class="animation"></recycle>
-        <div class="header">少儿</div>
-        <variety class="cartoon"></variety>
-    </group>
+    <div class="line"></div>
+    <div class="title">推荐</div>
+    <recycle class="recommend" id="recommend"></recycle>
+    <div class="title">热搜</div>
+    <recycle class="recommend" id="hot"></recycle>
 </template>

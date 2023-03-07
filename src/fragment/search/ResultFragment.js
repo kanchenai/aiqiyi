@@ -11,7 +11,6 @@ export default class ResultFragment extends Fragment{
     }
 
     initView(){
-        this.setStyle("background","green")
     }
     setView(){}
     initUtil(){}

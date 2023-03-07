@@ -71,7 +71,7 @@ export default class HomePage extends Page {
                 break;
             case "search":
                 var searchPage = new SearchPage();
-                this.startPage(searchPage, null);
+                this.startPage(searchPage, {});
                 break;
         }
     }

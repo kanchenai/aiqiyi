@@ -16,7 +16,6 @@ export default class HistoryDialog extends LoneDialog {
 
     initView() {
         this.content_list = this.findViewById("content_list");
-        console.log(this.content_list);
         this.content_list.col = 3;
         this.content_list.margin = new VMargin(0, 20, 0, 10);
         this.content_list.adapter = new HistoryAdapter();

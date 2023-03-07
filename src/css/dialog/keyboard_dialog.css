@@ -1,0 +1,90 @@
+.bg_transparent{
+    width: 1280px;
+    height: 630px;
+    top: 90px;
+    background: #1c2e28;
+    opacity: 0.6;
+}
+
+.bg{
+    width: 646px;
+    height: 500px;
+    left: 317px;
+    top: 90px;
+    background: #1c2e28;
+    overflow: hidden;
+}
+
+.keyboard{
+    width: 480px;
+    height: 450px;
+    left: 343px;
+    top: 115px;
+}
+
+.keyboard .item{
+    width: 70px;
+    height: 70px;
+    background: #888888;
+    border-radius: 15px;
+}
+
+.keyboard .focus{
+    width: 70px;
+    height: 70px;
+    border: unset;
+    left: 0px;
+    top: 0px;
+    background: #61dd6c;
+    border-radius: 15px;
+}
+
+.keyboard .text{
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.btn_group{
+    width: 150px;
+    height: 150px;
+    left: 800px;
+    top: 115px;
+}
+
+.btn .item{
+    width: 150px;
+    height: 70px;
+    background: #888888;
+    border-radius: 15px;
+}
+
+.btn .focus{
+    width: 150px;
+    height: 70px;
+    border: unset;
+    left: 0px;
+    top: 0px;
+    background: #61dd6c;
+    border-radius: 15px;
+}
+
+.btn .text{
+    width: 150px;
+    height: 70px;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.tips{
+    width: 150px;
+    height: 70px;
+    left: 800px;
+    top: 480px;
+    font-size: 26px;
+    line-height: 38px;
+    color:gray;
+}
