@@ -1,6 +1,6 @@
 <template>
     <div class="title">搜索结果</div>
-    <recycle class="result">
+    <recycle class="result" view-col="4" view-margin="0,15,0,15" id="result">
         <item class="item">
             <div class="focus"></div>
             <div class="pic"><img id="pic"></div>
@@ -11,8 +11,18 @@
         </item>
     </recycle>
     <div class="line"></div>
-    <div class="title">推荐</div>
-    <recycle class="recommend" id="recommend"></recycle>
-    <div class="title">热搜</div>
-    <recycle class="recommend" id="hot"></recycle>
+    <div class="title" style="left: 1010px">推荐</div>
+    <recycle class="type_recommend" style="top:50px;height: 225px;" id="recommend">
+        <item class="item">
+            <div class="focus"></div>
+            <text class="text" id="text"></text>
+        </item>
+    </recycle>
+    <div class="title" style="left: 1010px;top: 300px;">热搜</div>
+    <recycle class="type_recommend" style="top:350px;height: 235px;" view-down="none" id="hot">
+        <item class="item">
+            <div class="focus"></div>
+            <text class="text" id="text"></text>
+        </item>
+    </recycle>
 </template>

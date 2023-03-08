@@ -1,5 +1,5 @@
-.focus{
-    border:white 3px solid;
+.focus {
+    border: white 3px solid;
 }
 
 .pic{
@@ -7,10 +7,10 @@
     top: 3px;
 }
 
-.item .select{
+.item .select {
     display: none;
 }
 
-.item_select .select{
+.item_select .select {
     display: unset;
 }

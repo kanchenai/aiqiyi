@@ -1,0 +1,110 @@
+.title{
+    width: 150px;
+    height: 32px;
+    left: 42px;
+    line-height: 28px;
+    color: white;
+    font-size: 30px;
+}
+
+.result{
+    width: 910px;
+    height: 545px;
+    top: 50px;
+    left: 42px;
+    overflow: hidden;
+}
+.result .item{
+    width: 210px;
+    height: 312px;
+}
+
+.result .focus{
+    width: 204px;
+    height: 306px;
+}
+.result .item .focus{
+    border: white 3px solid;
+}
+
+.result .pic,
+.result .pic img{
+    width: 204px;
+    height: 271px;
+}
+
+.result .shadow{
+    left: 3px;
+    top: 183px;
+}
+
+.result .shadow img{
+    width: 204px;
+    height: 126px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.result .name{
+    width: 170px;
+    height: 18px;
+    left: 20px;
+    top: 234px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+}
+
+.result .info{
+    width: 170px;
+    height: 12px;
+    left: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: gray;
+    line-height: 12px;
+    overflow: hidden;
+}
+
+.line{
+    width: 1px;
+    height: 545px;
+    left: 975px;
+    top: 50px;
+    background: #666666;
+    opacity: 0.8;
+}
+
+.type_recommend{
+    width: 208px;
+    height: 405px;
+    top: 50px;
+    overflow: hidden;
+    left: 996px;
+}
+
+.type_recommend .item{
+    width: 208px;
+    height: 35px;
+}
+
+.type_recommend .focus{
+    width: 208px;
+    height: 35px;
+    border: unset;
+    background: #61dd6c;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+
+.type_recommend .text{
+    width: 180px;
+    height: 35px;
+    left: 14px;
+    font-size: 22px;
+    line-height: 35px;
+    color: white;
+    white-space: nowrap;
+}
