@@ -4,6 +4,7 @@ import AliWebPlayer from "@src/util/AliWebPlayer";
 import WelcomePage from "@page/WelcomePage";
 import OrderPage from "./page/OrderPage";
 import SearchPage from "./page/SearchPage";
+import DetailPage from "./page/DetailPage";
 
 require('./global_style.css')
 
@@ -24,6 +25,9 @@ export default class MyApplication extends Application {
                     break;
                 case "SearchPage":
                     page = new SearchPage();
+                    break;
+                case "DetailPage":
+                    page = new DetailPage();
                     break;
             }
             return page;

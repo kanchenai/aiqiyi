@@ -1,12 +1,13 @@
 import Page from "@core/frame/page/Page";
 
-import html from "@html/order";
+import html from "../html/order.html";
 import {Adapter, HORIZONTAL} from "@core/frame/view/group/RecycleView";
 import RecommendFragment from "../fragment/order/RecommendFragment";
 import WatchFragment from "../fragment/order/WatchFragment";
 import ValueFragment from "../fragment/order/ValueFragment";
 import VipFragment from "../fragment/order/VipFragment";
 import HistoryDialog from "../dialog/HistoryDialog";
+import SearchPage from "./SearchPage";
 
 
 export default class OrderPage extends Page {
@@ -50,6 +51,8 @@ export default class OrderPage extends Page {
     onClickListener(view){
         switch (view.id){
             case "search":
+                var searchPage = new SearchPage();
+                this.startPage(searchPage,null);
                 break;
             case "history":
                 this.historyDialog.show();

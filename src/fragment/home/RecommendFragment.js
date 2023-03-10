@@ -5,6 +5,7 @@ import {carouselData, hotData, likeData, newData, topicData_0} from "@src/mock-d
 import VMargin from "@core/frame/util/VMargin";
 import View from "@core/frame/view/base/View";
 import OrderPage from "@page/OrderPage";
+import DetailPage from "../../page/DetailPage";
 
 export default class RecommendFragment extends Fragment {
     onCreate() {
@@ -66,8 +67,8 @@ export default class RecommendFragment extends Fragment {
                 this.point_list.requestFocus();
                 break;
             default:
-                var orderPage = new OrderPage();
-                this.startPage(orderPage,null);
+                var detailPage = new DetailPage();
+                this.startPage(detailPage,{contentCode:"小猪佩奇的code"});
                 break;
         }
     }

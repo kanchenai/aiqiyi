@@ -1,0 +1,106 @@
+.bg {
+    width: 1280px;
+    height: 720px;
+}
+
+.bg .color {
+    width: 1280px;
+    height: 720px;
+    background: #141516;
+}
+
+.player {
+    width: 646px;
+    height: 456px;
+    left: 42px;
+    top: 42px;
+}
+
+.player .item {
+    width: 646px;
+    height: 366px;
+}
+
+.player .focus,
+.player .pic {
+    width: 640px;
+    height: 360px;
+}
+
+.title {
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+}
+
+.info {
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.btn {
+    width: 646px;
+    height: 80px;
+    top: 420px;
+    left: 42px;
+}
+
+.btn .item {
+    width: 80px;
+    height: 40px;
+    background: gray;
+    border-radius: 12px;
+}
+
+.btn .focus {
+    width: 80px;
+    height: 40px;
+    border: unset;
+    background: #61dd6c;
+    border-radius: 12px;
+}
+
+.btn .text {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.sub_content {
+    width: 646px;
+    height: 40px;
+    left: 42px;
+    top: 490px;
+    overflow: hidden;
+}
+
+.sub_content .item,
+.sub_content .focus,
+.sub_content .bg,
+.sub_content .text {
+    width: 60px;
+    height: 40px;
+}
+
+.sub_content .focus{
+    border: unset;
+    background: #61dd6c;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.sub_content .bg{
+    background: gray;
+    border-radius: 5px;
+}
+
+.sub_content .text {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+}
