@@ -104,3 +104,90 @@
     text-align: center;
     z-index: 1;
 }
+
+.recommend{
+    width: 646px;
+    height: 116px;
+    top: 590px;
+    left: 42px;
+    overflow: hidden;
+}
+
+.recommend .item{
+    width: 186px;
+    height: 116px;
+}
+
+.recommend .focus{
+    width: 180px;
+    height: 110px;
+}
+
+.recommend .pic,
+.recommend .pic img{
+    width: 180px;
+    height: 110px;
+}
+
+.recommend .shadow{
+    left: 3px;
+    top: 67px;
+}
+
+.recommend .shadow img{
+    width: 254px;
+    height: 130px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.recommend .name{
+    width: 220px;
+    height: 18px;
+    left: 20px;
+    top: 85px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+}
+
+.like{
+    width: 506px;
+    height: 664px;
+    left: 730px;
+    top: 42px;
+    overflow: hidden;
+}
+
+.like .item{
+    width: 506px;
+    height: 116px;
+}
+
+.like .focus{
+    width: 500px;
+    height: 110px;
+}
+
+.like .name{
+    width: 290px;
+    height: 24px;
+    left: 200px;
+    top: 15px;
+    white-space: nowrap;
+    font-size: 24px;
+    color: white;
+    line-height: 24px;
+}
+
+.like .info{
+    width: 290px;
+    height: 16px;
+    left: 200px;
+    white-space: nowrap;
+    font-size: 16px;
+    color: gray;
+    line-height: 16px;
+    overflow: hidden;
+}

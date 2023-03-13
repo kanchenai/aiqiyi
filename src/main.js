@@ -12,5 +12,8 @@ window.onload = function () {
     window.application.launch();
 
     console.log(new Date().getTime() - start)
+    console.log("项目地址：")
+    console.log("github:https://github.com/kanchenai/aiqiyi.git")
+    console.log("gitee:https://gitee.com/kanchenai/aiqiyi.git")
 }
 

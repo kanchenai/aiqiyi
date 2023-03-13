@@ -23,7 +23,7 @@
         </item>
     </group>
 
-    <recycle class="sub_content" view-orientation="h" view-locate="center" id="sub_content">
+    <recycle class="sub_content" view-orientation="h" id="sub_content">
         <item class="item">
             <div class="focus"></div>
             <div class="bg"></div>
@@ -31,21 +31,23 @@
         </item>
     </recycle>
     <div class="title" style="top:540px;left: 45px;">推荐</div>
-<!--    <recycle class="recommend">-->
-<!--        <item class="item">-->
-<!--            <div class="focus"></div>-->
-<!--            <div class="pic"></div>-->
-<!--            <div class="name"></div>-->
-<!--            <div class="info"></div>-->
-<!--        </item>-->
-<!--    </recycle>-->
+    <recycle class="recommend" view-orientation="h" id="recommend">
+        <item class="item">
+            <div class="focus"></div>
+            <div class="pic"><img id="pic"></div>
+            <div class="shadow"><img src="../images/home/recommend_fragment/like_shadow.png" view-lazy="0"></div>
+            <text class="name" id="name"></text>
+        </item>
+    </recycle>
 
-<!--    <recycle class="like">-->
-<!--        <item class="item">-->
-<!--            <div class="focus"></div>-->
-<!--            <div class="pic"></div>-->
-<!--            <div class="name"></div>-->
-<!--            <div class="info"></div>-->
-<!--        </item>-->
-<!--    </recycle>-->
+    <recycle class="recommend like" view-down="none" id="like">
+        <item class="item">
+            <div class="focus"></div>
+            <div class="pic"><img id="pic"></div>
+            <div class="shadow"><img src="../images/home/recommend_fragment/like_shadow.png" view-lazy="0"></div>
+            <text class="name" id="name"></text>
+            <div class="info" style="top: 55px;" id="info1"></div>
+            <div class="info" style="top: 80px;" id="info2"></div>
+        </item>
+    </recycle>
 </template>
