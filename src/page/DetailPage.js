@@ -10,6 +10,9 @@ import like_05 from "@images-js/home/recommend_fragment/like_05.png";
 import like_06 from "@images-js/home/recommend_fragment/like_06.png";
 import like_07 from "@images-js/home/recommend_fragment/like_07.png";
 import like_08 from "@images-js/home/recommend_fragment/like_08.png";
+import utils from "@src/util/utils";
+import PlayInfo from "@core/frame/player/PlayInfo";
+import VideoPlayer from "@core/frame/player/VideoPlayer";
 
 export default class DetailPage extends Page {
     constructor() {
@@ -27,6 +30,12 @@ export default class DetailPage extends Page {
 
     initView() {
         console.log(this.param)
+
+        this.bg_parent = this.findEleById("bg_parent");
+        this.bg = this.findEleById("bg");
+
+        this.video_pic = this.findViewById("video_pic");
+
         this.sub_content = this.findViewById("sub_content");
         this.sub_content.margin.right = 5;
         var adapter = new Adapter();
@@ -43,9 +52,24 @@ export default class DetailPage extends Page {
         this.like = this.findViewById("like");
         this.like.margin.bottom = 15;
         this.like.adapter = new LikeAdapter();
+
+        this.player = new VideoPlayer(this);
+
+        var playUrl = "http://live.ynurl.com/video/s10027-LCDST/index.m3u8"
+        var playInfo = new PlayInfo(playUrl, 45, 45, 640, 360);
+        this.player.play(0, playInfo);
     }
 
     setView() {
+        this.player.onPlayStart = "onPlayStart";
+        this.player.onPositionChangeListener = "onPositionChangeListener";
+        this.player.onVolumeChangeListener = "onVolumeChangeListener";
+        this.player.onPlayComplete = "onPlayComplete";
+        this.player.onPlayPause = "onPlayPause";
+        this.player.onPlayResume = "onPlayResume";
+        this.player.onPlayStop = "onPlayStop";
+        this.player.onPlayError = "onPlayError";
+        this.player.onPlayByTime = "onPlayByTime";
     }
 
     initUtil() {
@@ -59,13 +83,69 @@ export default class DetailPage extends Page {
         this.like.data = recommendData;
     }
 
+    onResume() {
+
+    }
+
     onClickListener(view) {
         switch (view.id) {
             case "order":
                 var orderPage = new OrderPage();
                 this.startPage(orderPage, null);
                 break;
+            case "collect":
+                break;
         }
+    }
+
+    onPause() {
+        this.player.pause();
+    }
+
+    onPlayStart() {
+        console.log(this.pageName + " onPlayStart");
+        this.video_pic.hide();
+        utils.bgToVideoBg(this.bg_parent,this.bg,this.player.playInfo);
+    }
+
+    onPlayPause() {
+        console.log(this.pageName + " onPlayPause");
+        this.video_pic.show();
+        utils.videoBgToBg(this.bg_parent,this.bg)
+    }
+
+    onPlayResume() {
+        console.log(this.pageName + " onPlayResume");
+        this.video_pic.hide();
+        utils.bgToVideoBg(this.bg_parent,this.bg,this.player.playInfo);
+    }
+
+    onPositionChangeListener(position, duration) {
+        // console.log(this.pageName + " position",position,"duration",duration);
+    }
+
+    onVolumeChangeListener(volume) {
+        console.log(this.pageName + " volume", volume);
+    }
+
+    onPlayStop() {
+        console.log(this.pageName + " onPlayStop");
+        this.video_pic.show();
+        utils.videoBgToBg(this.bg_parent,this.bg)
+    }
+
+    onPlayComplete() {
+        console.log(this.pageName + " onPlayComplete");
+        utils.videoBgToBg(this.bg_parent,this.bg)
+    }
+
+    onPlayError() {
+        console.log(this.pageName + " onPlayError");
+        utils.videoBgToBg(this.bg_parent,this.bg)
+    }
+
+    onPlayByTime(time) {
+        console.log(this.pageName + " onPlayByTime", time);
     }
 }
 

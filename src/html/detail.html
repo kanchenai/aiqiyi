@@ -1,11 +1,12 @@
 <template>
-    <div class="bg">
-        <div class="color"></div>
+    <div class="bg" id="bg_parent">
+<!--        <div class="color" id="bg"></div>-->
+        <img src="../images/bg.jpg" id="bg">
     </div>
     <div class="player">
         <item class="item" first-focus>
             <div class="focus"></div>
-            <div class="pic"></div>
+            <div class="pic"><img id="video_pic" src="../images/detail/pic.jpeg"></div>
         </item>
     </div>
 
@@ -13,7 +14,7 @@
     <div class="info" style="top: 450px;left: 45px;">9.7分</div>
 
     <group class="btn">
-        <item class="item" style="left: 460px;">
+        <item class="item" style="left: 460px;" id="collect">
             <div class="focus"></div>
             <div class="text">收藏</div>
         </item>
