@@ -10,6 +10,7 @@ import MovieFragment from "@fragment/home/MovieFragment";
 import VarietyFragment from "@fragment/home/VarietyFragment";
 import AnimationFragment from "@fragment/home/AnimationFragment";
 import SearchPage from "./SearchPage";
+import ListPage from "@page/ListPage";
 
 export default class HomePage extends Page {
     constructor() {
@@ -49,6 +50,7 @@ export default class HomePage extends Page {
     }
 
     setView() {
+        this.navigation.onClickListener = onNavigationClickListener;
         this.navigation.onFocusChangeListener = onNavigationFocusChangeListener;
     }
 
@@ -95,4 +97,9 @@ var onNavigationFocusChangeListener = function (view, hasFocus) {
         this.frame_view.switchTo(index)
         // }
     }
+}
+
+var onNavigationClickListener = function (view) {
+    var listPage = new ListPage();
+    this.startPage(listPage, null)
 }

@@ -57,6 +57,12 @@ export default class MyApplication extends Application {
             case "search":
                 firstPage = new SearchPage();
                 break;
+            case "detail":
+                firstPage = new DetailPage();
+                break;
+            case "list":
+                firstPage = new ListPage();
+                break;
             default:
                 firstPage = new WelcomePage();
                 break;
