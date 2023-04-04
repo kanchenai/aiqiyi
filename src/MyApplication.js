@@ -7,8 +7,6 @@ import SearchPage from "./page/SearchPage";
 import DetailPage from "./page/DetailPage";
 import ListPage from "@page/ListPage";
 
-require('./global_style.css')
-
 export default class MyApplication extends Application {
     constructor(id) {
         super(id);
@@ -36,6 +34,8 @@ export default class MyApplication extends Application {
             }
             return page;
         }
+
+        this.backUrl = "";
     }
 
     onLaunch(urlParam) {
