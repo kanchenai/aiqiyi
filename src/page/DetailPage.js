@@ -15,11 +15,6 @@ import PlayInfo from "@core/frame/player/PlayInfo";
 import VideoPlayer from "@core/frame/player/VideoPlayer";
 
 export default class DetailPage extends Page {
-    constructor() {
-        super();
-        this.pageName = "DetailPage"
-    }
-
     onCreate(param) {
         this.html = html;
 

@@ -13,11 +13,6 @@ import SearchPage from "./SearchPage";
 import ListPage from "@page/ListPage";
 
 export default class HomePage extends Page {
-    constructor() {
-        super();
-        this.pageName = "HomePage";
-    }
-
     onCreate(param) {
         this.html = html;
         this.initView();

@@ -6,11 +6,6 @@ import KeyboardDialog from "../dialog/KeyboardDialog";
 import Toast from "../../core/frame/view/single/Toast";
 
 export default class SearchPage extends Page {
-    constructor() {
-        super();
-        this.pageName = "SearchPage";
-    }
-
     onCreate(param) {
         this.html = html;
         this.initView();

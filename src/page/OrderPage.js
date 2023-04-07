@@ -11,11 +11,6 @@ import SearchPage from "./SearchPage";
 
 
 export default class OrderPage extends Page {
-    constructor() {
-        super();
-        this.pageName = "OrderPage";
-    }
-
     onCreate(param) {
         this.html = html;
         this.initView();

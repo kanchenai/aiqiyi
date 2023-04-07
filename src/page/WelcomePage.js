@@ -3,11 +3,6 @@ import html from "@html/welcome.html"
 import HomePage from "@page/HomePage";
 
 export default class WelcomePage extends Page{
-    constructor() {
-        super();
-        this.pageName = "WelcomePage";
-    }
-
     onCreate(param) {
         this.html = html;
 
