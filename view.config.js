@@ -22,4 +22,4 @@ export var PageConfig = {
  * 当未获取到第一个页面时，会使用改页面
  * @type {string}
  */
-export var LaunchPage = "HomePage";
+export var LaunchPage = "WelcomePage";
