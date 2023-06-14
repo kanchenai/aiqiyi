@@ -72,16 +72,6 @@ export default class RecommendFragment extends Fragment {
                 break;
         }
     }
-
-    onScrollingListener(scrollView, x, y) {
-        if(scrollView == this){
-            if (y > 300) {
-                this.page.navigationScrollDisappear();
-            }else{
-                this.page.navigationScrollDisplay();
-            }
-        }
-    }
 }
 
 class CarouselAdapter extends Adapter {

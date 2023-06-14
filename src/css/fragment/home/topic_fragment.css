@@ -1,11 +1,8 @@
 .item .pic{
-    left: 3px;
-    top: 3px;
+    left: 0px;
+    top: 0px;
 }
 
-.item .focus{
-    border: white 3px solid;
-}
 
 .main_content,
 .main_content .bg img{
@@ -37,10 +34,23 @@
     height: 376px;
 }
 
+.title{
+    width: 1000px;
+    height: 24px;
+    left: 45px;
+}
+
+.title .txt{
+    height: 24px;
+    white-space: nowrap;
+    line-height: 24px;
+    font-size: 24px;
+}
+
 .r_254x194,
 .r_254x194 .item{
-    width: 260px;
-    height: 200px;
+    width: 254px;
+    height: 194px;
 }
 
 .r_254x194 .focus{
@@ -54,8 +64,7 @@
 }
 
 .r_254x194 .shadow{
-    left: 3px;
-    top: 67px;
+    top: 64px;
 }
 
 .r_254x194 .shadow img{
@@ -68,8 +77,8 @@
 .r_254x194 .name{
     width: 220px;
     height: 18px;
-    left: 20px;
-    top: 122px;
+    left: 17px;
+    top: 119px;
     white-space: nowrap;
     font-size: 18px;
     color: white;
@@ -79,7 +88,7 @@
 .r_254x194 .info{
     width: 220px;
     height: 12px;
-    left: 20px;
+    left: 17px;
     white-space: nowrap;
     font-size: 12px;
     color: gray;
@@ -90,8 +99,8 @@
 
 .r_584x440,
 .r_584x440 .item{
-    width: 591px;
-    height: 446px;
+    width: 584px;
+    height: 440px;
 }
 
 .r_584x440 .focus{
@@ -105,8 +114,7 @@
 }
 
 .r_584x440 .shadow{
-    left: 3px;
-    top: 283px;
+    top: 280px;
 }
 
 .r_584x440 .shadow img{
@@ -119,8 +127,8 @@
 .r_584x440 .name{
     width: 220px;
     height: 18px;
-    left: 20px;
-    top: 353px;
+    left: 17px;
+    top: 350px;
     white-space: nowrap;
     font-size: 18px;
     color: white;
@@ -130,7 +138,7 @@
 .r_584x440 .info{
     width: 220px;
     height: 12px;
-    left: 20px;
+    left: 17px;
     white-space: nowrap;
     font-size: 12px;
     color: gray;
@@ -146,4 +154,62 @@
 .screen_440{
     width: 1280px;
     height: 446px;
+}
+
+.r_204x306 .item,
+.r_204x306 .focus{
+    width: 204px;
+    height: 306px;
+}
+
+.r_204x306 .pic,
+.r_204x306 .pic img{
+    width: 204px;
+    height: 271px;
+}
+
+.r_204x306 .shadow{
+    top: 180px;
+}
+
+.r_204x306 .shadow img{
+    width: 204px;
+    height: 126px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.r_204x306 .name{
+    width: 170px;
+    height: 18px;
+    left: 17px;
+    top: 231px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    line-height: 18px;
+}
+
+.r_204x306 .info{
+    width: 170px;
+    height: 12px;
+    left: 17px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: gray;
+    line-height: 12px;
+    overflow: hidden;
+}
+
+.back_top .item{
+    width: 1280px;
+    height: 64px;
+    font-size: 14px;
+    line-height: 64px;
+    text-align: center;
+    color: #606060;
+}
+
+.back_top .item_focus{
+    color: #62da6b;
 }

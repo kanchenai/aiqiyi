@@ -1,6 +1,5 @@
 import Page from "@core/frame/page/Page";
 
-import html from "@html/home.html"
 import {Adapter, HORIZONTAL} from "@core/frame/view/group/RecycleView";
 import RecommendFragment from "@fragment/home/RecommendFragment";
 import HistoryDialog from "@src/dialog/HistoryDialog";
@@ -11,10 +10,11 @@ import VarietyFragment from "@fragment/home/VarietyFragment";
 import AnimationFragment from "@fragment/home/AnimationFragment";
 import SearchPage from "./SearchPage";
 import ListPage from "@page/ListPage";
+import utils from "@src/util/utils";
 
 export default class HomePage extends Page {
     onCreate(param) {
-        this.html = html;
+        this.html = require("@html/home.html");
         this.initView();
         this.setView();
         this.initUtil();
@@ -70,6 +70,40 @@ export default class HomePage extends Page {
                 var searchPage = new SearchPage();
                 this.startPage(searchPage, {});
                 break;
+        }
+    }
+
+    onScrollEndListener(scrollView, x, y) {
+        if (scrollView != this.top_group) {
+            if (y > 0) {
+                this.navigationScrollDisappear();
+            } else {
+                this.navigationScrollDisplay();
+            }
+        }
+
+    }
+
+    bgToVideoBg(playInfo) {
+        var bg = this.findEleById("bg");
+        var parentNode = bg.parentNode;
+
+        utils.bgToVideoBg(parentNode, bg, playInfo);
+    }
+
+    videoBgToBg() {
+        var bg = this.findEleById("bg");
+        var parentNode = bg.parentNode;
+
+        utils.videoBgToBg(parentNode, bg);
+    }
+
+    key_back_event() {
+        var foregroundView = this.frame_view.foregroundView;
+        if(foregroundView.scrollTop != 0){
+            foregroundView.requestFocus();
+        }else{
+            this.finish();
         }
     }
 }

@@ -1,11 +1,11 @@
-import hot_01 from "@images-js/home/recommend_fragment/hot_01.png"
-import hot_02 from "@images-js/home/recommend_fragment/hot_02.png"
-import hot_03 from "@images-js/home/recommend_fragment/hot_03.png"
-import hot_04 from "@images-js/home/recommend_fragment/hot_04.png"
-import hot_05 from "@images-js/home/recommend_fragment/hot_05.png"
-import hot_06 from "@images-js/home/recommend_fragment/hot_06.png"
-import hot_07 from "@images-js/home/recommend_fragment/hot_07.png"
-import hot_08 from "@images-js/home/recommend_fragment/hot_08.png"
+import hot_01 from "@images/home/recommend_fragment/hot_01.png"
+import hot_02 from "@images/home/recommend_fragment/hot_02.png"
+import hot_03 from "@images/home/recommend_fragment/hot_03.png"
+import hot_04 from "@images/home/recommend_fragment/hot_04.png"
+import hot_05 from "@images/home/recommend_fragment/hot_05.png"
+import hot_06 from "@images/home/recommend_fragment/hot_06.png"
+import hot_07 from "@images/home/recommend_fragment/hot_07.png"
+import hot_08 from "@images/home/recommend_fragment/hot_08.png"
 
 export var historyData = [
     {
