@@ -16,16 +16,9 @@ export default class RecommendFragment extends Fragment {
     }
 
     initView() {
-        this.carousel_group = this.findViewById("carousel_group");
-        this.carousel_group.focusable = false;
-        this.carousel_group.adapter = new CarouselAdapter();
-
-        this.point_list = this.findViewById("point_list");
-        this.point_list.margin = new VMargin(0, 0, 3, 3);
-        this.point_list.onFocusChangeListener = onFocusChangeListenerPoint;
-        var adapter = new Adapter();
-        adapter.bindHolder = function (holder, data){};//Adapter是建议重写bindHolder方法，但这个这里不需要，所以置为空实现，空实现是为了不打印提示
-        this.point_list.adapter = adapter;
+        this.carousel = this.findViewById("carousel");
+        this.carousel.margin = new VMargin(0, 0, -100, -100)
+        this.carousel.adapter = new CarouselAdapter();
 
         this.like_group = this.findViewById("like_group");
         this.like_group.adapter = new LikeAdapter();
@@ -49,9 +42,7 @@ export default class RecommendFragment extends Fragment {
     }
 
     initUtils() {
-        this.carousel_group.data = carouselData;
-        this.point_list.data = carouselData;
-        this.point_list.selectView = this.point_list.activeHolderMap.get(0).component;//这个是RecycleView设置默认驻留，有点麻烦，并且不靠谱
+        this.carousel.data = carouselData;
         this.like_group.data = likeData;
         this.hot_group.data = hotData;
         this.topic_0.data = topicData_0;
@@ -61,14 +52,14 @@ export default class RecommendFragment extends Fragment {
         this.topic_3.data = topicData_0;
     }
 
-    onClickListener(view){
-        switch (view.id){
+    onClickListener(view) {
+        switch (view.id) {
             case "back_top":
-                this.point_list.requestFocus();
+                this.carousel.requestFocus();
                 break;
             default:
                 var detailPage = new DetailPage();
-                this.startPage(detailPage,{contentCode:"小猪佩奇的code"});
+                this.startPage(detailPage, {contentCode: "小猪佩奇的code"});
                 break;
         }
     }
@@ -76,7 +67,8 @@ export default class RecommendFragment extends Fragment {
 
 class CarouselAdapter extends Adapter {
     bindHolder(holder, data) {
-        holder.findViewById("pic").src = data;
+        var poster = holder.findViewById("poster");
+        poster.data = {poster:data};
     }
 }
 
@@ -126,20 +118,5 @@ class NewAdapter extends Adapter {
         info1.innerText = data.info1;
         info2.innerText = data.info2;
 
-    }
-}
-
-var onFocusChangeListenerPoint = function (view, hasFocus) {
-    if (hasFocus) {
-        var index = view.fatherView.holder.index;
-        this.carousel_group.scrollByIndex(index);
-
-
-        var that = this;
-        setTimeout(function () {
-            if (that.scrollTop != 0) {
-                that.scrollVerticalTo(0);
-            }
-        }, 0)
     }
 }

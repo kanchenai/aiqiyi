@@ -74,7 +74,7 @@ export default class HomePage extends Page {
     }
 
     onScrollEndListener(scrollView, x, y) {
-        if (scrollView != this.top_group) {
+        if (this.frame_view.childViews.indexOf(scrollView) >= 0) {
             if (y > 0) {
                 this.navigationScrollDisappear();
             } else {

@@ -1,20 +1,9 @@
 <template>
-    <recycle class="carousel_group" view-orientation="h" view-loop="0" id="carousel_group">
-        <div class="r_1280x513" style="left: 0px;top:0px;">
-            <div class="item">
-                <div class="focus"><img></div>
-                <div class="pic"><img id="pic"></div>
-            </div>
-        </div>
-    </recycle>
-    <div class="point_list_bg"></div>
-    <recycle class="point_list"
-             view-orientation="h" view-loop="0"
-             view-left="none" view-right="none"
-             view-select="1"
-             id="point_list">
-        <item class="item"></item>
-    </recycle>
+    <group style="width: 1280px;height: 520px;overflow:hidden;">
+        <carousel style="width: 1280px;height: 430px;top: 83px;overflow: hidden;" id="carousel">
+            <poster size="1050,422" id="poster"></poster>
+        </carousel>
+    </group>
     <div class="title" style="top: 540px;">
         <div class="txt">猜你喜欢</div>
     </div>
